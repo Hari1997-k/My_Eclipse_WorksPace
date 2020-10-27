@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id = "que" class = "Com.spring.SpringMapCinj.Question">
+	<constructor-arg name = "ques" value = "What is DI In Spring ?"/>
+	<constructor-arg>
+	<map>
+	<entry key ="Hari" value = "Di Means Dependency Injection"></entry>
+	<entry key="HariKuntrapakam" value="Di Is Used To Inject Dependencies From One Class Ro Another Class"></entry>
+	</map>
+	</constructor-arg>
+	</bean>
+	</beans>

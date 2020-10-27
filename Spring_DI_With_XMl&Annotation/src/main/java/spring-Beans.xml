@@ -1,0 +1,45 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+     SETTER INJECTION :  
+      <bean id  = "emp" class = "Com.Spring.SpringUsingXml.Employee">
+        <property name = "eid" value = "111"/>
+        <property name = "ename" value = "Hari"/>
+        <property name = "erole" value = "FullStack"/>
+        </bean>
+        CONSTRUCTOR INJECTION
+          <bean id = "emp" class = "Com.Spring.SpringUsingXml.Employee">
+        <constructor-arg index = "0" value = "222"/>
+        <constructor-arg index = "1" value = "aaa"/>
+        <constructor-arg index = "2" value = "aaaaa"/>
+        </bean>
+        SETTER WITH HASS A RELATIONSHIP
+ <bean id = "add" class = "Com.Spring.SpringUsingXml.Address">
+<property name = "doorNo" value = "19-3-1b/12c"/>
+<property name="street" value = "GarudadriNagar"/>
+<property name = "district" value = "Chittoor"/>
+</bean>
+<bean id = "emp" class = "Com.Spring.SpringUsingXml.Employee">
+<property name="eid" value = "234"/>
+<property name="ename" value = "Kuntrapakam_Hari"/>
+<property name="erole" value = "Devops engineer"/>
+<property name="address" ref="add" ></property>
+</bean>
+CONSTRUCTOR WITH HAS A RELATIUONSHIP
+<bean id = "add" class = "Com.Spring.SpringUsingXml.Address" >
+<constructor-arg index = "0" value = "19-3-1b/12c"/>
+<constructor-arg index = "1" value = "padmavathipuram"/>
+<constructor-arg index = "2" value = "TPT"/>
+</bean>
+<bean id = "emp" class = "Com.Spring.SpringUsingXml.Employee" >
+<constructor-arg index = "0" value = "120"/>
+<constructor-arg index = "1" value = "Raj"/>
+<constructor-arg index = "2" value = "Tester"/>
+<constructor-arg index = "3" ref="add"/>
+</bean>
+
+        
+</beans>
+ -->

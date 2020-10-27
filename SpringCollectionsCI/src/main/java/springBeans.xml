@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id = "que" class = "Com.spring.SpringCollectionsCI.Question">
+	<constructor-arg  value = "What is An OOPS ?"/>
+	<constructor-arg >
+	<list>
+	<value>OOPS is A Programming SSystem</value>
+	<value>OOPS Follows Object Oreinted Concepts</value>
+	<value>OOPS Is An Structurw Of Proggramming Languages</value>
+	</list>
+	</constructor-arg>
+	</bean>
+	</beans>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+ "-//Hibernate/Hibernate Configuration DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-mapping>
+<class name  = "Com.hibernate.HibernateWithoutAnnotation.Student" table = "Student">
+<id name = "sid" type = "int">
+<!-- If ur using generator type increment in hbm file then no need to set the primary key if not u have to set it. -->
+<generator class="increment"/>
+</id>
+<property name = "sname" type  = "string"/>
+<property name = "sbranch" type = "string"/>
+<property name = "sgrade" type = "string"/>
+</class>
+</hibernate-mapping>

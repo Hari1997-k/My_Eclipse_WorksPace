@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id="que" class="com.spring.SpringCollections.Question">
+		<property name="ques" value="What is java ?" />
+		<property name="answers">
+			<list>
+				<value>java is a programming language </value>
+				<value>Java is an OOPS languahe</value>
+				<value>Java is an robust language</value>
+			</list>
+		</property>
+		<property name="Rank">
+		<set>
+		<value>1</value>
+		<value>2</value>
+		<value>3</value>
+		</set>
+		</property>
+	</bean>
+
+</beans>

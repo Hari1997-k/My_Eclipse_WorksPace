@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id = "que" class = "Com.spring.SpringMapSinj.Question">
+	<property name="ques" value = "What is Sopring ?"></property>
+	<property name="answer">
+	<map>
+	<entry key = "By KsRAO" value ="Spring Is An Framework"></entry>
+	<entry key = "Hari" value = "Spring Is A Light Weighted Framework Of Java"></entry>
+	</map>
+	</property>
+	</bean>
+	</beans>
+	

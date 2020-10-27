@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<bean id = "address" class = "Com.spring.SpringAutowireUsingXML.Address">
+	<property name = "doorno" value = "aaaa"/> 
+		<constructor-arg index = "0" value = "AAAA"/>
+		<constructor-arg index = "1" value = "BBBB"/>
+		<constructor-arg index = "2" value = "CCCC"/>
+
+	
+	<!--// AUTOWIRE BY NAME : 
+	</bean>
+	<bean id = "emp" class ="Com.spring.SpringAutowireUsingXML.Employee" autowire = "byName">
+		<property name = "eid" value ="1111"/>
+		<property name = "ename" value ="dddd"/>
+	
+	</bean> -->
+	
+	</bean>
+	<bean id = "emp" class ="Com.spring.SpringAutowireUsingXML.Employee" autowire = "constructor">
+		<constructor-arg index = "0" value = "12333"/>
+		<constructor-arg index = "1" value = "ASAS"/>
+		
+	
+	</bean>
+</beans>
